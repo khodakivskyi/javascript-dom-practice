@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: paleturquoise;
+    max-width: 550px;
+    font-size: 24px;
+}
+form > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form > div:last-child{
+    justify-content: center;
+    gap: 8px;
+}
+
+button {
+    padding: 6px;
+}
+option, button{
+    font-size: 16px;
+}
+label {
+    margin-right: 4px;
+}

@@ -1,0 +1,70 @@
+body {
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    width: 40%;
+    margin: 0 auto;
+    gap: 16px;
+    padding: 16px;
+}
+
+body > div, div > span, div > div {
+    font-weight: 700;
+    transition: box-shadow 0.2s ease;
+}
+
+div > span, div > div {
+    font-style: italic;
+}
+
+span > span, div > div > div, div > div > span {
+    font-weight: 300;
+    transition: color 0.5s, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+div, span {
+    border-radius: 10px;
+    border-left: 4px solid red;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 16px;
+    overflow: hidden;
+    gap: 8px;
+    width: auto;
+}
+
+span {
+    border-color: orange;
+}
+
+
+body div:last-child {
+    background-color: #d3d3d3;
+}
+
+body > div:last-child {
+    border-color: transparent;
+}
+
+div > div span:last-child, div > span span:last-child {
+    background-color: #ececec;
+}
+
+div > div:hover {
+    box-shadow: 0 0 6px red;
+}
+
+div > span:first-child:hover {
+    box-shadow: 0 0 6px orange;
+}
+
+span > span:hover, div > div > div:hover, div > div > span:hover {
+    color: orange;
+}
+
+span > span:active, div > div > div:active, div > div > span:active {
+    box-shadow: 0 0 6px orange;
+}

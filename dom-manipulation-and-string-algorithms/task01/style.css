@@ -1,0 +1,17 @@
+.selected {
+    background-color: yellow;
+}
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+table td {
+    border: 2px solid black;
+}
+table:last-child{
+    margin-top: 16px;
+}
