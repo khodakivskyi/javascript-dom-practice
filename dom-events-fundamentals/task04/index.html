@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="../task03/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Загальний рахунок: <span id="score">0% (0 правильних відповідей з 10)</span></h2>
+    <h3>Питання: №<span id="current"></span></h3>
+    <h5 id="question"></h5>
+    <div class="test-block" style="flex-direction: column-reverse;">
+        <button id="nextBtn" onclick="nextQuestion()">Наступне завдання</button>
+        <div class="options-container"></div>
+    </div>
+    <div id="result" style="display: none;"></div>
+</div>
+</body>
+</html>

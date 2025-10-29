@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="script.js"></script>
+    <style>
+        span {
+            margin-right: 6px;
+        }
+
+        .sliders{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .block {
+            background-color: blue;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="sliders">
+    <div>
+        <span>width:</span>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <sub>0</sub>
+            <input id="widthSlider" type="range" min="0" max="500" value="0">
+            <sub>500</sub>
+            <input id="widthNumber" type="number" min="0" max="500" value="0" style="width: 60px;" disabled>
+        </div>
+    </div>
+    <div>
+        <span>height:</span>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <sub>0</sub>
+            <input id="heightSlider" type="range" min="0" max="500" value="0">
+            <sub>500</sub>
+            <input id="heightNumber" type="number" min="0" max="500" value="0" style="width: 60px;" disabled>
+        </div>
+    </div>
+    <div>
+        <span>rotate:</span>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <sub>0</sub>
+            <input id="rotateSlider" type="range" min="0" max="500" value="0">
+            <sub>500</sub>
+            <input id="rotateNumber" type="number" min="0" max="500" value="0" style="width: 60px;" disabled>
+        </div>
+    </div>
+</div>
+<div class="block"></div>
+</body>
+</html>

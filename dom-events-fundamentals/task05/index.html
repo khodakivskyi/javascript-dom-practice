@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="script.js"></script>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            max-width: 50%;
+        }
+        .active{
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        .non-active{
+            filter: grayscale(100%);
+            opacity: 0.5;
+        }
+        img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>

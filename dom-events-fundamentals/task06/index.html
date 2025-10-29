@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="script.js"></script>
+    <style>
+        .input,  .form-container{
+            border: 2px solid blue
+        }
+        .form-container{
+            padding: 10px 16px;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        .input{
+            outline: none;
+            width: 150px;
+            height: 20px;
+        }
+        textarea.input{
+            height: 40px;
+        }
+        .focus{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="form">
+    <div class="form-container">
+        <input type="text" class="input" placeholder="login">
+    </div>
+    <div class="form-container">
+        <input type="password" class="input" placeholder="password">
+    </div>
+    <div class="form-container">
+        <textarea class="input" placeholder="description"></textarea>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Загальний рахунок: <span id="score">0% (0 правильних відповідей з 10)</span></h2>
+    <h3>Питання: №<span id="current"></span></h3>
+    <div class="test-block">
+        <label id="question" for="answer"></label>
+        <input type="number" id="answer">
+        <div class="buttons-container">
+            <button class="check-btn" onclick="checkAnswer()">Перевірити</button>
+            <button id="nextBtn" onclick="nextQuestion()">Наступне завдання</button>
+        </div>
+    </div>
+    <div id="result" style="display: none;"></div>
+</div>
+</body>
+</html>

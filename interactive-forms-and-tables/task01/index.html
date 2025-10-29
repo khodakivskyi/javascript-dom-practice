@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 14px 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>№</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+    </tr>
+</table>
+
+<form id="personForm">
+    <label for="firstName">FirstName:</label>
+    <input type="text" id="firstName" required>
+
+    <label for="lastName">LastName:</label>
+    <input id="lastName" type="text" required>
+
+    <button type="submit">Add</button>
+</form>
+</body>
+</html>
